@@ -1,21 +1,18 @@
-"use strict";
 
 const VOWELS = "aeiouy"
 
-function translate(phrase){
+export function translate(phrase){
     return phrase
 }
 
-var assert = require('assert');
+import * as assert from 'assert';
 
-if (!global.is_checking) {
-	console.log("Example:")
-	console.log(translate("hieeelalaooo"))
-	
-    assert.equal(translate("hieeelalaooo"), "hello", "Hi!");
-    assert.equal(translate("hoooowe yyyooouuu duoooiiine"), "how you doin", "Joey?");
-    assert.equal(translate("aaa bo cy da eee fe"), "a b c d e f", "Alphabet");
-    assert.equal(translate("sooooso aaaaaaaaa"), "sos aaa", "Mayday, mayday");
+console.log("Example:")
+console.log(translate("hieeelalaooo"))
 
-    console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
-}
+assert.equal(translate("hieeelalaooo"), "hello");
+assert.equal(translate("hoooowe yyyooouuu duoooiiine"), "how you doin");
+assert.equal(translate("aaa bo cy da eee fe"), "a b c d e f");
+assert.equal(translate("sooooso aaaaaaaaa"), "sos aaa");
+
+console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
